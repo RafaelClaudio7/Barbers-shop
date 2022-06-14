@@ -1,0 +1,118 @@
+/* Importing Poppins font from google api*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Grid Container Props*/
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 80vh 45vh 15vh;
+    gap: 20px;
+    grid-template-areas: "header header" "main aside" "products products" "footer footer";
+}
+
+/* Defining Backgrounds and grid areas from container elements*/
+header {
+    background-color: #fafafa;
+    grid-area: header;
+}
+
+main {
+    background-image: url(assets/imgs/young-man-at-barbershop-trimming-hair.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    grid-area: main;
+}
+
+aside {
+    background-color: #ff7e67;
+    grid-area: aside;
+}
+
+.products-container {
+    background-color: #a2d5f2;
+    grid-area: products;
+}
+
+footer {
+    background-color: #07689f;
+    grid-area: footer;
+}
+
+/* Nav Styles*/
+nav {
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #07689f;
+}
+
+nav ul li a:hover {
+    color: #a2d5f2;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: #07689f;
+}
+
+.phrases-container {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.phrases-container h2 {
+    font-size: 38px;
+    color: #07689f;
+    font-weight: 900;
+}
+
+.phrases-container h3 {
+    font-size: 28px;
+    color: #d6e6f2;
+    font-weight: 700;
+}
+
+.phrases-container button {
+    margin-top: 15px;
+    margin-left: 25px;
+    align-self: flex-start;
+    padding: 10px;
+    font-size: 20px;
+    color: #07689f;
+    font-weight: bold;
+    background-color: #a2d5f2;
+    border: none;
+    border-radius: 10px;
+}
+
+.phrases-container button:hover {
+    background-color: #d6e6f2;
+    color: #ff7e67;
+}
