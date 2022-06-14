@@ -12,6 +12,6 @@ Focus on using Grid Layout
 
 
 ## Initial Design
-<img src="./assets/imgs;intial-des.png" alt="Home of Barbers Shop Website Design">
+<img src="./assets/imgs/intial-des.png" alt="Home of Barbers Shop Website Design">
 
 
